@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поступление в МедСкиллс 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="card">
+            
+            <div class="hero-banner">
+                <img id="heroImage" src="image2.jpg" alt="МедСкиллс" loading="lazy">
+            </div>
+            
+            <header class="header">
+                <h1 id="mainTitle">Медицинский колледж «МедСкиллс»</h1>
+                <p class="tagline">Приемная кампания 2026</p>
+            </header>
+            
+            <section class="info-grid" id="infoGrid">
+                <div class="info-item">
+                    <span class="label">Специальности</span>
+                    <p>сестринское дело, фармация</p>
+                </div>
+                
+                <div class="info-item">
+                    <span class="label">Форма обучения</span>
+                    <p>очная, очно-заочная</p>
+                </div>
+                
+                <div class="info-item">
+                    <span class="label">После</span>
+                    <p>9, 11, колледжа, ВУЗа</p>
+                </div>
+                
+                <div class="info-item">
+                    <span class="label">Адреса</span>
+                    <!-- <p>ул. Пушкинская, д. 106<br>ул. Большая Садовая, д. 76</p> -->
+                     <p>Пушкинская 106, Садовая 76</p>
+                </div>
+            </section>
+            
+            <section class="form-section" id="formContent">
+                <div class="form-header">
+                    <h2>Оставить заявку</h2>
+                    <p>Узнайте проходной балл, конкурс и количество мест</p>
+                </div>
+                
+                <form id="leadForm" novalidate>
+                    <div class="input-group">
+                        <label for="fio">ФИО <span class="required-fill">*</span></label>
+                        <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович">
+                        <span class="error-text" id="fioError">Введите фамилию и имя</span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="phone">Телефон <span class="required-fill">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                        <span class="error-text" id="phoneError">Введите полный номер телефона</span>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="agreement" checked>
+                        <label for="agreement">
+                            Нажимая кнопку «Отправить», я даю свое согласие на обработку персональных данных в соответствии с <span class="link" id="openPopup">согласием</span><span class="required-fill">*</span>.
+                        </label>
+                        <span class="error-text" id="agreementError">Необходимо дать согласие</span>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit" id="submitBtn">Отправить заявку</button>
+                </form>
+            </section>
+            
+            <div id="successState" class="success-state">
+                <div class="success-icon">✓</div>
+                <h2>Заявка отправлена</h2>
+                <p>Мы свяжемся с вами в ближайшее время!</p>
+            </div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <h3>Согласие на обработку персональных данных</h3>
+                        <span class="close" id="closePopup">×</span>
+                    </div>
+                    
+                    <div class="popup-body consent-text">
+                        <p class="consent-intro">
+                            Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года свободно, своей волей и в своем интересе выражаю свое безусловное согласие на обработку моих персональных данных <strong>ЧОУ ДПО "АПК И ПП"</strong> (ОГРН 1176196051503, ИНН 6161083143), зарегистрированным в соответствии с законодательством РФ по адресу:<br>
+                            ИЗМАИЛЬСКИЙ, ДОМ 41, РОСТОВ-НА-ДОНУ, РОСТОВСКАЯ ОБЛАСТЬ, Россия, 344068 (далее по тексту - Оператор).
+                        </p>
+                        
+                        <ol class="consent-list">
+                            <li>
+                                <strong>Согласие дается на обработку</strong> одной, нескольких или всех категорий персональных данных, не являющихся специальными или биометрическими, предоставляемых мною, которые могут включать:
+                                <ul class="consent-sublist">
+                                    <li>ФИО;</li>
+                                    <li>Телефон.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Оператор может совершать следующие действия:</strong> сбор; запись; систематизация; накопление; хранение; уточнение (обновление, изменение); извлечение; использование; блокирование; удаление; уничтожение.
+                            </li>
+                            <li>
+                                <strong>Способы обработки:</strong> как с использованием средств автоматизации, так и без их использования.
+                            </li>
+                            <li>
+                                <strong>Цель обработки:</strong> предоставление мне услуг/работ, включая направление в мой адрес уведомлений, касающихся предоставляемых услуг/работ, подготовка и направление ответов на мои запросы, направление в мой адрес информации о мероприятиях/товарах/услугах/работах Оператора.
+                            </li>
+                            <li>
+                                <strong>Поручение обработки:</strong> В связи с тем, что Оператор может осуществлять обработку моих персональных данных посредством программы для ЭВМ «1С-Битрикс24», я даю свое согласие Оператору на осуществление соответствующего поручения <strong>ООО «1С-Битрикс»</strong> (ОГРН 5077746476209), зарегистрированному по адресу: 109544, г. Москва, б-р Энтузиастов, д. 2, эт. 13, пом. 8-19.
+                            </li>
+                            <li>
+                                <strong>Срок действия и отзыв:</strong> Настоящее согласие действует до момента его отзыва путем направления соответствующего уведомления на электронный адрес <a href="mailto:ferty123@inbox.ru">ferty123@inbox.ru</a> или направления по адресу ИЗМАИЛЬСКИЙ, ДОМ 41, РОСТОВ-НА-ДОНУ, РОСТОВСКАЯ ОБЛАСТЬ, Россия, 344068.
+                            </li>
+                            <li>
+                                <strong>Последствия отзыва:</strong> В случае отзыва мною согласия на обработку персональных данных Оператор вправе продолжить обработку персональных данных без моего согласия при наличии оснований, предусмотренных Федеральным законом №152-ФЗ «О персональных данных» от 27.07.2006 г.
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <div class="popup-footer">
+                        <button class="btn secondary" id="declineBtn">Не принимаю</button>
+                        <button class="btn primary" id="acceptBtn">Принимаю</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
