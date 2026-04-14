@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/inter/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/inter/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/inter/Inter_18pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/inter/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary: #fd3c76;
     --secondary: #005dff;
@@ -247,7 +279,7 @@ input.invalid {
 }
 
 .popup-content {
-    background: white;
+    background: #fff;
     width: 100%;
     max-width: 520px;
     max-height: 85vh;
@@ -276,7 +308,7 @@ input.invalid {
     align-items: center;
     padding: 20px 24px;
     border-bottom: 1px solid #f0f0f0;
-    background: white;
+    background: #fff;
 }
 
 .popup-header h3 {
@@ -312,7 +344,7 @@ input.invalid {
     padding: 24px;
     overflow-y: auto;
     flex: 1;
-    background: white;
+    background: #fff;
     scrollbar-width: thin;
     scrollbar-color: #d0d0d0 #f5f5f5;
 }
@@ -409,7 +441,7 @@ input.invalid {
     gap: 12px;
     padding: 16px 24px 20px;
     border-top: 1px solid #f0f0f0;
-    background: white;
+    background: #fff;
 }
 
 .popup-footer .btn {
@@ -448,6 +480,50 @@ input.invalid {
 .popup-footer .btn:active {
     transform: translateY(0);
     box-shadow: none;
+}
+
+.thankyou-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.thankyou-icon {
+    font-size: 4rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.thankyou-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.thankyou-message {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background-color: #e02e62;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(253, 60, 118, 0.3);
 }
 
 @media (max-width: 36rem) {
